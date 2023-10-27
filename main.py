@@ -7,7 +7,7 @@ socketio = SocketIO(app)
 
 @app.route('/')
 def index():
-    return render_template('index.html')  # You can create an HTML template for your web page
+    return {'date':"Hello World"}  # You can create an HTML template for your web page
 
 @socketio.on('message')
 def handle_message(message):
